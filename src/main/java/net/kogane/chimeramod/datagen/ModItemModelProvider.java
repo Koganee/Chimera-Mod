@@ -44,6 +44,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.REFINED_IRON_SWORD); //Refined Iron Sword.
         basicItem(ModItems.CREEPER_CORE.get()); //Creeper Core.
         basicItem(ModItems.SKELETON_ARM.get()); //Skeleton Arm.
+        basicItem(ModItems.ENDER_FLESH.get());
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

@@ -2,9 +2,12 @@ package net.kogane.chimeramod;
 
 import com.mojang.logging.LogUtils;
 import net.kogane.chimeramod.block.ModBlocks;
+import net.kogane.chimeramod.entity.ModEntities;
+import net.kogane.chimeramod.entity.client.ChimeraRenderer;
 import net.kogane.chimeramod.item.ModItems;
 import net.kogane.chimeramod.loot.ModLootModifiers;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -45,6 +48,7 @@ public class ChimeraMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
     }
@@ -64,6 +68,7 @@ public class ChimeraMod {
         {
             event.accept(ModItems.CREEPER_CORE);
             event.accept(ModItems.SKELETON_ARM);
+            event.accept(ModItems.ENDER_FLESH);
         }
     }
 
@@ -78,6 +83,7 @@ public class ChimeraMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.CHIMERA.get(), ChimeraRenderer::new);
         }
     }
 }

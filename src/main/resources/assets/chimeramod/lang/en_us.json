@@ -1,5 +1,7 @@
 {
   "item.chimeramod.refined_iron_sword": "Refined Iron Sword",
   "item.chimeramod.creeper_core": "Creeper Core",
-  "item.chimeramo.skeleton_arm": "Skeleton Arm"
+  "item.chimeramod.skeleton_arm": "Skeleton Arm",
+  "item.chimeramod.ender_flesh": "Ender Flesh",
+  "entity.chimeramod.chimera": "Chimera"
 }

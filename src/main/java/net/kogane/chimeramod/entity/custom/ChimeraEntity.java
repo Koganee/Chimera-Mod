@@ -56,9 +56,10 @@ public class ChimeraEntity extends Monster {
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
                 .add(Attributes.MAX_HEALTH, 50D)
-                .add(Attributes.MOVEMENT_SPEED, 0.35D)
+                .add(Attributes.MOVEMENT_SPEED, 0.15D)
                 .add(Attributes.FOLLOW_RANGE, 24D)
-                .add(Attributes.TEMPT_RANGE, 12D);
+                .add(Attributes.TEMPT_RANGE, 12D)
+                .add(Attributes.ATTACK_DAMAGE, 1);
     }
 
     private void setupAnimationStates() {

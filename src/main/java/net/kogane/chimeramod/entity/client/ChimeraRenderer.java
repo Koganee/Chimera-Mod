@@ -32,7 +32,7 @@ public class ChimeraRenderer extends EntityRenderer<ChimeraEntity, EntityRenderS
     @Override
     public void render(EntityRenderState state, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
         poseStack.pushPose();
-        poseStack.scale(1.0F, -1.0F, 1.0F); // Flip Y axis so model isn't upside down
+        poseStack.scale(1.0F, 1.0F, 1.0F); // Flip Y axis so model isn't upside down
 
         VertexConsumer vertexconsumer = ItemRenderer.getFoilBuffer(
                 buffer, this.model.renderType(this.getTextureLocation()), false, false);

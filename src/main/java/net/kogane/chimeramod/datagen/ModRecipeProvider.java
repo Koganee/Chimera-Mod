@@ -1,6 +1,7 @@
 package net.kogane.chimeramod.datagen;
 
 import net.kogane.chimeramod.ChimeraMod;
+import net.kogane.chimeramod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -40,7 +41,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes() {
-
+        shaped(RecipeCategory.MISC, ModItems.PORTAL_CORE.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" C ")
+                .define('A', ModItems.CREEPER_CORE.get())
+                .define('B', ModItems.ENDER_FLESH.get())
+                .define('C', ModItems.SKELETON_ARM.get())
+                .unlockedBy(getHasName(ModItems.CREEPER_CORE.get()), has(ModItems.CREEPER_CORE.get())).save(output);
     }
 
     protected void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

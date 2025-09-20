@@ -45,6 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CREEPER_CORE.get()); //Creeper Core.
         basicItem(ModItems.SKELETON_ARM.get()); //Skeleton Arm.
         basicItem(ModItems.ENDER_FLESH.get());
+        basicItem(ModItems.PORTAL_CORE.get());
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

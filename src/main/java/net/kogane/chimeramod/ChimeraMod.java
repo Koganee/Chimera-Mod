@@ -69,6 +69,7 @@ public class ChimeraMod {
             event.accept(ModItems.CREEPER_CORE);
             event.accept(ModItems.SKELETON_ARM);
             event.accept(ModItems.ENDER_FLESH);
+            event.accept(ModItems.PORTAL_CORE);
         }
     }
 

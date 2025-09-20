@@ -29,6 +29,8 @@ public class ModItems {
             Item::new);
     public static final RegistryObject<Item> ENDER_FLESH = registerItem("ender_flesh",
             Item::new);
+    public static final RegistryObject<Item> PORTAL_CORE = registerItem("portal_core",
+            Item::new);
 
     public static RegistryObject<Item> registerItem(String name, Function<Item.Properties, Item> function) {
         return ModItems.ITEMS.register(name, () -> function.apply(new Item.Properties()

@@ -4,5 +4,9 @@
   "item.chimeramod.skeleton_arm": "Skeleton Arm",
   "item.chimeramod.ender_flesh": "Ender Flesh",
   "item.chimeramod.portal_core": "Portal Core",
+  "item.chimeramod.creeperium_ingot": "Creeperium Ingot",
+  "item.chimeramod.scarletite_ingot": "Scarletite Ingot",
+  "item.chimeramod.portalium_ingot": "Portalium Ingot",
+  "item.chimeramod.baki_ingot": "Baki Ingot",
   "entity.chimeramod.chimera": "Chimera"
 }

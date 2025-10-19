@@ -70,6 +70,10 @@ public class ChimeraMod {
             event.accept(ModItems.SKELETON_ARM);
             event.accept(ModItems.ENDER_FLESH);
             event.accept(ModItems.PORTAL_CORE);
+            event.accept(ModItems.CREEPERIUM_INGOT);
+            event.accept(ModItems.SCARLETITE_INGOT);
+            event.accept(ModItems.PORTALIUM_INGOT);
+            event.accept(ModItems.BAKI_INGOT);
         }
     }
 

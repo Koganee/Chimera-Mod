@@ -28,11 +28,11 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 ModItems.CREEPER_CORE.get()));
         add("skeleton_arm_from_skeleton", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/skeleton"))
-                        .and(LootItemRandomChanceCondition.randomChance(0.1f)).build() }, // modified by the creeper's own loot table
+                        .and(LootItemRandomChanceCondition.randomChance(0.1f)).build() },
                 ModItems.SKELETON_ARM.get()));
         add("ender_flesh_from_enderman", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/enderman"))
-                        .and(LootItemRandomChanceCondition.randomChance(0.15f)).build() }, // modified by the creeper's own loot table
+                        .and(LootItemRandomChanceCondition.randomChance(0.15f)).build() },
                 ModItems.ENDER_FLESH.get()));
     }
 }

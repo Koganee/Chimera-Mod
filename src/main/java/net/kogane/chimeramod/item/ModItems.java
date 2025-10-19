@@ -31,6 +31,14 @@ public class ModItems {
             Item::new);
     public static final RegistryObject<Item> PORTAL_CORE = registerItem("portal_core",
             Item::new);
+    public static final RegistryObject<Item> CREEPERIUM_INGOT = registerItem("creeperium_ingot",
+            Item::new);
+    public static final RegistryObject<Item> SCARLETITE_INGOT = registerItem("scarletite_ingot",
+            Item::new);
+    public static final RegistryObject<Item> PORTALIUM_INGOT = registerItem("portalium_ingot",
+            Item::new);
+    public static final RegistryObject<Item> BAKI_INGOT = registerItem("baki_ingot",
+            Item::new);
 
     public static RegistryObject<Item> registerItem(String name, Function<Item.Properties, Item> function) {
         return ModItems.ITEMS.register(name, () -> function.apply(new Item.Properties()

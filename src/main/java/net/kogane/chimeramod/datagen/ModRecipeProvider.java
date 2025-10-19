@@ -44,10 +44,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         shaped(RecipeCategory.MISC, ModItems.PORTAL_CORE.get())
                 .pattern(" A ")
                 .pattern(" B ")
-                .pattern(" C ")
-                .define('A', ModItems.CREEPER_CORE.get())
+                .pattern(" A ")
+                .define('A', ModItems.PORTALIUM_INGOT.get())
                 .define('B', ModItems.ENDER_FLESH.get())
-                .define('C', ModItems.SKELETON_ARM.get())
+                .unlockedBy(getHasName(ModItems.CREEPER_CORE.get()), has(ModItems.CREEPER_CORE.get())).save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.CREEPERIUM_INGOT.get(), 9)
+                .requires(ModItems.CREEPER_CORE.get())
                 .unlockedBy(getHasName(ModItems.CREEPER_CORE.get()), has(ModItems.CREEPER_CORE.get())).save(output);
     }
 

@@ -46,6 +46,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SKELETON_ARM.get()); //Skeleton Arm.
         basicItem(ModItems.ENDER_FLESH.get());
         basicItem(ModItems.PORTAL_CORE.get());
+        basicItem(ModItems.CREEPERIUM_INGOT.get());
+        basicItem(ModItems.SCARLETITE_INGOT.get());
+        basicItem(ModItems.PORTALIUM_INGOT.get());
+        basicItem(ModItems.BAKI_INGOT.get());
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

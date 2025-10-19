@@ -1,3 +1,5 @@
-// 1.21.3	2025-09-20T21:48:23.9527777	My Recipes
+// 1.21.3	2025-10-19T12:05:58.1484506	My Recipes
+28a95b3092bdf914a3ee1e373248534046929a38 data/chimeramod/advancement/recipes/misc/creeperium_ingot.json
 d4781360896575b3250e03786873f4832c2f93b8 data/chimeramod/advancement/recipes/misc/portal_core.json
-b148a2825f491bdff6a504628dadb7dfeda8b441 data/chimeramod/recipe/portal_core.json
+16a9956e5cc1b0b37be03d337f33f37e21b6d65d data/chimeramod/recipe/creeperium_ingot.json
+6c157628c202725cf9e47f9da98719df44402c49 data/chimeramod/recipe/portal_core.json
